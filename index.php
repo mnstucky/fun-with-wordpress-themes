@@ -2,6 +2,10 @@
 
 get_header();
 
+?>
+<div class="simple-container">
+<?php
+
 if (have_posts()) :
     // Load posts loop.
     while (have_posts()) : the_post(); ?>
@@ -14,4 +18,10 @@ else :
     echo '<p>There are no posts!</p>';
 endif;
 
+?>
+</div>
+<?php
+
 get_footer();
+
+?>
