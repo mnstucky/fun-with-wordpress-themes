@@ -1,5 +1,11 @@
 <?php
 
+function theme_support() {
+    add_theme_support('title-tag');
+}
+
+add_action('after_theme_setup', 'theme_support');
+
 function register_nav()
 {
     register_nav_menus(array(
