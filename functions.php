@@ -25,6 +25,8 @@ if (!function_exists('setup')) {
 function load_css()
 {
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('opensans', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+    wp_enqueue_style('matesc', 'https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 }
 
 // Placeholder for loading JS assets
